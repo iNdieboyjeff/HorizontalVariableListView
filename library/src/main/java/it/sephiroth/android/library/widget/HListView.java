@@ -3633,4 +3633,11 @@ public class HListView extends AbsHListView {
 
 	@Override
 	public void onGlobalLayout() {}
+
+	@Override
+	public void invalidateViews() {
+		// TODO Auto-generated method stub
+		super.invalidateViews();
+		mRecycler.clear();
+	}
 }
